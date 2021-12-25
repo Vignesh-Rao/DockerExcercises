@@ -1,0 +1,5 @@
+ docker build .
+ docker tag 9056fe107ac2 docker.io/raov/hellovariable:0.2
+ docker push docker.io/raov/hellovariable:0.2
+ docker run -it docker.io/raov/hellovariable:0.2
+ docker run -it -e "var1=World" docker.io/raov/hellovariable:0.2
